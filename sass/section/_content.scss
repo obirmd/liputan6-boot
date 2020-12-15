@@ -1,0 +1,272 @@
+.container2 {
+    @include container();
+    display: flex;
+}
+
+.bkanan {
+    width: 70%;
+    height: 1600px;
+    border-radius: 8px 8px 0px 0px;
+
+    .gambar {
+        img {
+            width: 672px;
+            border-radius: 8px 8px 0px 0px;
+         }
+    } 
+
+    p {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 10px;
+        color: lightslategray;
+    }
+
+    h1 {
+        margin-left: 20px;
+        margin-top: 9px;
+        color: $text-color;
+    }
+
+    a {
+        text-decoration: none;
+        
+    }
+
+    h5 {
+        margin-left: 20px;
+        margin-top: 8px;
+        color: rgb(103, 107, 110);
+        font-weight: normal;
+    }
+
+    hr {
+        @include hr();
+    }
+
+    .slid {
+        h4 {
+            margin-top: 30px;
+            margin-left: 20px;
+            color: rgb(53, 52, 51);
+        }
+    }
+    
+}
+
+.slid h4 {
+    margin-bottom: 10px;
+}
+
+.berita {
+    display: flex;
+    margin-left: 20px;
+
+    .b1 {
+      @include img();
+    }
+
+    .b2 {
+        @include img();
+    } 
+
+    .b3 {
+        @include img();
+    } 
+}
+
+.slid {
+    .berita {
+        .b1 {
+            @include berita();
+        } 
+
+        .b2 {
+            @include berita();
+        } 
+
+        .b3 {
+           @include berita();
+        } 
+    } 
+} 
+
+.bkiri {
+    width: 30%;
+    height: 1600px;
+    border-radius: 8px 8px 0px 0px;
+
+    .populer {
+        h3 {
+            font-size: 14px;
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        a:hover {
+            color: $primary-color;
+        }
+
+        p {
+            font-size: 12px;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        span {
+            letter-spacing: 20px;
+            font-weight: bold;
+            font-size: 17px;
+            color: $primary-color;
+        }
+
+        hr {
+            width: 230px;
+            margin-left: 53px;
+            opacity: 0.3;
+        }
+    }
+
+    .live {
+        img {
+            width: 280px;
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+    } 
+
+    .tv {
+        p {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 13px;
+        }
+
+        img {
+            width: 280px;
+            margin-left: 5px;
+        }
+    } 
+
+    .fakta {
+        .tum {
+            img {
+                width: 270px;
+                margin-left: 10px;
+                margin-top: 5px;
+                border-radius: 10px;
+            }
+
+            p {
+                font-weight: bold;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
+
+            hr {
+                margin-top: 10px;
+                opacity: 0.3;
+                width: 269px;
+                margin-left: 10px;
+            }
+        } 
+    } 
+
+    .tk1 {
+        display: flex;
+
+        img {
+            @include margin1();
+         }
+
+         p {
+            @include margin1();
+            font-weight: bold;
+         }
+
+         a {
+            text-decoration: none;
+            color: $text-color;
+           }
+    }
+
+    hr {
+        @include hr();
+    }
+
+    .tk2 {
+        display: flex;
+
+        img {
+            @include margin1();
+         }
+
+         p {
+            @include margin1();
+            font-weight: bold;
+         }
+
+         a {
+            text-decoration: none;
+            color: $text-color;
+           }
+    }
+
+    hr {
+        @include hr();
+    }
+}
+
+.artikel {
+    .item {
+        .item1 {
+            display: flex;
+
+            img {
+                @include item1();
+                border-radius: 10px;
+            }
+
+            h5 {
+                @include item1();
+                color: $primary-color;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                @include item1();
+            }
+
+            a {
+                color: $text-color;
+            }
+        }
+    } 
+} 
+
+.loadmore {
+    button {
+        background-color: $primary-color;
+        height: 20px;
+        width: 110px;
+        border: none;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 290px;
+        color: $secondary-color;
+    }
+} 
